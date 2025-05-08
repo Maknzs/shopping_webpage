@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Webpage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Search Products</h1>
+      <form id="search-form">
+        <div class="search-row">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Enter Search Here"
+          />
+          <button type="submit">Search NOW!</button>
+        </div>
+        <div class="advanced-options">
+          <div class="search-row">
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+              <option value="">All</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Books">Books</option>
+              <option value="Clothing">Clothing</option>
+              <option value="Car">Car</option>
+              <option value="Pets">Pets</option>
+              <option value="Home">Home</option>
+            </select>
+          </div>
+          <div class="search-row">
+            <label for="sort">Stort By:</label>
+            <select id="sort-by" name="sort_by">
+              <option value="A-Z">A-Z</option>
+              <option value="Z-A">Z-A</option>
+              <option value="high-low">Price: High to Low</option>
+              <option value="low-high">Price: Low to High</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </header>
+    <br />
+    <main>
+      <div id="results-container"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
